@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Commerce</title>
+    <meta
+      name="description"
+      content="Premium Commerce — luxury essentials for everyday living."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand-wrap">
+          <div class="brand-mark">P</div>
+          <div>
+            <div class="brand-name">Premium</div>
+            <div class="brand-sub">Commerce</div>
+          </div>
+        </div>
+
+        <nav class="nav-links">
+          <a href="#collections">Collections</a>
+          <a href="#featured">Featured</a>
+          <a href="#style">Style Journal</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="ghost-button">Search</button>
+          <button class="primary-button">Cart (0)</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Curated for elevated living</span>
+            <h1>Luxury objects for the life you love.</h1>
+            <p>
+              Discover premium essentials designed to refine your routines,
+              elevate your spaces, and make every moment feel exceptional.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#collections" class="primary-button">Shop now</a>
+              <a href="#featured" class="secondary-button">Explore drops</a>
+            </div>
+
+            <ul class="brand-points">
+              <li>Free shipping over €150</li>
+              <li>2-year guarantee</li>
+              <li>24/7 concierge support</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="visual-card main-card">
+              <img
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80"
+                alt="Premium accessories"
+              />
+            </div>
+            <div class="floating-badge badge-top">New collection</div>
+            <div class="floating-badge badge-bottom">4.9/5 average rating</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip">
+        <div class="container strip-grid">
+          <div>
+            <strong>1.8k+</strong>
+            <span>happy clients</span>
+          </div>
+          <div>
+            <strong>48h</strong>
+            <span>dispatch time</span>
+          </div>
+          <div>
+            <strong>200+</strong>
+            <span>premium products</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>ethical sourcing</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="collections" class="catalogue">
+        <div class="container section-intro">
+          <div>
+            <span class="eyebrow">Signature collection</span>
+            <h2>Essentials worth keeping.</h2>
+          </div>
+          <a href="#featured" class="text-link">View all items</a>
+        </div>
+
+        <div class="container category-row">
+          <button class="category active">All</button>
+          <button class="category">Accessories</button>
+          <button class="category">Wearables</button>
+          <button class="category">Audio</button>
+          <button class="category">Home</button>
+          <button class="category">Travel</button>
+          <button class="category">Tech</button>
+        </div>
+
+        <div id="products" class="container product-grid"></div>
+      </section>
+
+      <section id="featured" class="showcase">
+        <div class="container section-intro">
+          <div>
+            <span class="eyebrow">Editor’s picks</span>
+            <h2>Designed for the modern lifestyle.</h2>
+          </div>
+        </div>
+
+        <div class="container showcase-grid">
+          <article class="showcase-card large">
+            <div class="copy">
+              <span class="tag">Best sellers</span>
+              <h3>Everyday luxury, beautifully made.</h3>
+              <p>
+                Discover our most-loved pieces built to create a calm, elevated,
+                and intentional routine.
+              </p>
+              <a href="#collections" class="primary-button">Shop collection</a>
+            </div>
+          </article>
+
+          <article class="showcase-card small one">
+            <div class="copy">
+              <span class="tag">Travel</span>
+              <h3>Move beautifully.</h3>
+            </div>
+          </article>
+
+          <article class="showcase-card small two">
+            <div class="copy">
+              <span class="tag">Home</span>
+              <h3>Bring calm home.</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="style" class="journal">
+        <div class="container section-intro">
+          <div>
+            <span class="eyebrow">Style journal</span>
+            <h2>Thoughtful notes on how we live well.</h2>
+          </div>
+        </div>
+
+        <div class="container journal-grid">
+          <article class="journal-card">
+            <img
+              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80"
+              alt="Luxury living"
+            />
+            <div class="journal-body">
+              <span>Design</span>
+              <h3>How to build a luxury routine without excess.</h3>
+              <p>Minimal pieces, intentional rituals, and long-lasting essentials.</p>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <img
+              src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=900&q=80"
+              alt="Premium accessories"
+            />
+            <div class="journal-body">
+              <span>Culture</span>
+              <h3>What truly makes an object feel premium?</h3>
+              <p>Craftsmanship, quality, and the stories we attach to them.</p>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <img
+              src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80"
+              alt="Luxury lifestyle"
+            />
+            <div class="journal-body">
+              <span>Living</span>
+              <h3>7 details that instantly elevate a room.</h3>
+              <p>Thoughtful accents that make spaces calmer and richer.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="faq">
+        <div class="container faq-grid">
+          <div>
+            <span class="eyebrow">Customer care</span>
+            <h2>Need help choosing something special?</h2>
+            <p>
+              Our concierge team is available to help with gifting, styling, and
+              product recommendations.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <div>
+              <h3>Do you offer gift packaging?</h3>
+              <p>Yes. Every order can be beautifully wrapped and personalized.</p>
+            </div>
+            <div>
+              <h3>How long does shipping take?</h3>
+              <p>Orders typically ship within 48 hours and arrive across Europe in 3–5 days.</p>
+            </div>
+            <div>
+              <h3>Can I return an item?</h3>
+              <p>We offer 30-day hassle-free returns on all unworn, unused pieces.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand-wrap">
+            <div class="brand-mark">P</div>
+            <div>
+              <div class="brand-name">Premium</div>
+              <div class="brand-sub">Commerce</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#collections">Shop</a>
+          <a href="#style">Journal</a>
+          <a href="#faq">Support</a>
+        </div>
+
+        <div class="newsletter">
+          <p>Join the list for early access and private drops.</p>
+          <div class="newsletter-box">
+            <input type="email" placeholder="Email address" />
+            <button>Join</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

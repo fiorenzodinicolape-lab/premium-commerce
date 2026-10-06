@@ -1,2 +1,5 @@
-# premium-commerce
-Premium Commerce store built with Node.js, Express and SQLite
+node_modules/
+.env
+npm-debug.log*
+.DS_Store
+database.sqlite

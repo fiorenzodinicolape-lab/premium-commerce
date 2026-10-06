@@ -1,0 +1,46 @@
+const productGrid = document.querySelector('#products');
+
+async function fetchProducts() {
+  try {
+    const response = await fetch('/api/products');
+    const products = await response.json();
+    renderProducts(products);
+  } catch (error) {
+    console.error('Unable to load products:', error);
+    productGrid.innerHTML = '<p>Products are temporarily unavailable.</p>';
+  }
+}
+
+function renderProducts(products) {
+  if (!productGrid) return;
+
+  productGrid.innerHTML = products
+    .map(
+      (product) => `
+        <article class="product-card">
+          <div class="product-image">
+            <img src="${product.image}" alt="${product.name}" />
+            <span class="product-badge">${product.badge || 'Premium'}</span>
+          </div>
+          <div class="product-body">
+            <div class="product-meta">
+              <span>${product.category}</span>
+              <span>★ ${product.rating} (${product.reviews})</span>
+            </div>
+            <h3 class="product-title">${product.name}</h3>
+            <p class="product-description">${product.description}</p>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="price">€${product.price}</span>
+                <span class="old-price">€${product.originalPrice}</span>
+              </div>
+              <button class="product-btn">Add</button>
+            </div>
+          </div>
+        </article>
+      `
+    )
+    .join('');
+}
+
+fetchProducts();
